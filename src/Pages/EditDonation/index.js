@@ -564,7 +564,7 @@ function EditDonation() {
               text = text.replace(new RegExp("[ÓÒÔÕ]", "gi"), "o");
               text = text.replace(new RegExp("[ÚÙÛ]", "gi"), "u");
               text = text.replace(new RegExp("[Ç]", "gi"), "c");
-              text = text.replace(" ", "");
+              text = text.replace(/\s/g, "");
               return text;
             }
             const newDonNameSch = stringCorrection(namePop);

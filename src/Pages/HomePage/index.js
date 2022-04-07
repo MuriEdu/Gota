@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import Logo from "../../assets/Logo.transparente.png";
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { MdOutlineMailOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { getData } from "../../firebase";
 
@@ -70,11 +71,33 @@ function HomePage() {
     <div>
       <div className="homeMenu">
         <div className="socialMenu">
-          <button className="whatsapp">
+          <button
+            className="whatsapp"
+            onClick={() => {
+              window.location.assign(
+                "https://chat.whatsapp.com/CONgHqrV7piGS2F9navtSJ"
+              );
+            }}
+          >
             <BsWhatsapp className="whatsappIcon" />
           </button>
-          <button className="instagram">
+          <button
+            className="instagram"
+            onClick={() => {
+              window.location.assign(
+                "https://instagram.com/projeto_gota_?utm_medium=copy_link"
+              );
+            }}
+          >
             <BsInstagram className="instagramIcon" />
+          </button>
+          <button
+            className="email"
+            onClick={() => {
+              window.location.assign("mailto:projeto.gota2020@gmail.com");
+            }}
+          >
+            <MdOutlineMailOutline className="emailIcon" />
           </button>
         </div>
         <Link to={"/about-us"} className="aboutUsButton">

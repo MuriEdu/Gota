@@ -25,6 +25,27 @@
   height: 40px;
 }
 
+.email {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  padding-bottom: 15px;
+}
+
+.email:hover {
+  transition: 0.3s;
+  color: #00aeef;
+}
+
+.emailIcon {
+  height: 50px;
+  width: 50px;
+}
+
 .instagram {
   background-color: #fff;
   border: none;
@@ -40,6 +61,12 @@
 .instagramIcon {
   width: 40px;
   height: 40px;
+}
+
+.socialMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutUsButton {
