@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.productsPopupNone {
+  display: none;
+}
+
+.productsPopup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: #333333;
+  width: 600px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -160px;
+  border-radius: 10px;
+}
+
+.newProductButtonAdd {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00aeef;
+  cursor: pointer;
+}
+
+.newProductButtonAdd:hover {
+  background-color: #007daa;
+  transition: 0.3s;
+}
+
+.newProductButtonCancel {
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff6363;
+  cursor: pointer;
+}
+
+.newProductButtonCancel:hover {
+  background-color: #f73c3c;
+  transition: 0.3s;
+}
+
+.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 80px;
+}
+
+.dateForm {
+  display: flex;
+  margin-left: 80px;
+}
+
+.titles {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #00aeef;
+}
+
+.dateText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.dateInput {
+  font-family: "Poppins", sans-serif;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.productsForm {
+  margin-left: 80px;
+}
+
+.productsList {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.newProducts {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: italic;
+  color: #5f5d5d;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.newProducts:hover {
+  transition: 0.3s;
+  color: #00aeef;
+}
+
+.nameForm {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.nameInput {
+  margin-left: 15px;
+}
+
+.infoForm {
+  margin-left: 80px;
+  margin-bottom: 40px;
+}
+
+.infoInput {
+  font-family: "Poppins", sans-serif;
+  padding: 15px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  width: 700px;
+  height: 180px;
+}
+
+.picForm {
+  display: flex;
+  margin-left: 80px;
+}
+
+.picInput {
+  margin-left: 15px;
+}
+
+.menu {
+  margin-top: 50px;
+}
+
+.addButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  align-self: center;
+  align-content: center;
+  color: #fff;
+  background-color: #00aeef;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  width: 631px;
+  height: 70px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addButton:hover {
+  background-color: #007daa;
+  transition: 0.3s;
+}
+
+.cancelButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  align-self: center;
+  align-content: center;
+  color: #fff;
+  background-color: #ff6363;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  width: 631px;
+  height: 70px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cancelButton:hover {
+  background-color: #f73c3c;
+  transition: 0.3s;
+}
+
+.delProduct {
+  background-color: #fff;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #ff6363;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.delProduct:hover {
+  color: #f73c3c;
+  transition: 0.3s;
+}
+
+.insideProductsDiv {
+  display: flex;
+}

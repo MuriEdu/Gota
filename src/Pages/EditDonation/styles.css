@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.editTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin-left: 80px;
+}
+
+.itemDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+  margin-bottom: 30px;
+  width: 520px;
+}
+
+.editButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.editButtonIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.editButtonIcon:hover {
+  color: #007daa;
+  transition: 0.3s;
+}
+
+.itemTitle {
+  color: #00aeef;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 20px;
+}
+
+.itemText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.productDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#products {
+  align-items: flex-start;
+}
+
+#productsTitle {
+  margin: 8px;
+  margin-left: 20px;
+}
+
+.productLiDiv {
+  margin-left: 45px;
+}
+
+#descItemDiv {
+  align-items: flex-start;
+  width: 700px;
+}
+
+#descTitle {
+  margin: 8px;
+  margin-left: 20px;
+}
+
+#descText {
+  margin-left: 35px;
+}
+
+.buttons {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-left: 30%;
+}
+
+.none {
+  display: none;
+}
+
+.editBox {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  min-height: fit-content;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+  background-color: #1b1b1b;
+  border-radius: 15px;
+}
+
+.popTitleText {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.popButtons {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  margin: 23px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+#confirmPopButton {
+  background-color: #00aeef;
+}
+
+#confirmPopButton:hover {
+  background-color: #007daa;
+  transition: 0.3s;
+}
+
+#cancelPopButton {
+  background-color: #ff6363;
+}
+
+#cancelPopButton:hover {
+  background-color: #f73c3c;
+  transition: 0.3s;
+}
+
+.datePopDiv {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.datePopText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-style: italic;
+  margin-right: 15px;
+}
+
+.datePopInput {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  width: 140px;
+}
+
+.productDivPop {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+}
+
+.productsListPop {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.delProductPop {
+  color: #ff6363;
+  background-color: #1b1b1b;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.delProductPop:hover {
+  color: #f73c3c;
+  transition: 0.3s;
+}
+
+.newProductDiv {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.newProductButton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #5f5d5d;
+  background-color: #1b1b1b;
+  border: none;
+  font-size: 20px;
+}
+
+.newProductButton:hover {
+  color: #007daa;
+  transition: 0.3s;
+}
+
+.newProductPopDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -400px;
+  width: 800px;
+  min-height: fit-content;
+  background-color: #1b1b1b;
+  border-radius: 10px;
+}
+
+.newProductPopInput {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.namePopDiv {
+  display: flex;
+  flex-direction: column;
+}

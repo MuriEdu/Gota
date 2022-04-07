@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.homeMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.whatsapp {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.whatsapp:hover {
+  transition: 0.3s;
+  color: #00aeef;
+}
+
+.whatsappIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.instagram {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.instagram:hover {
+  transition: 0.3s;
+  color: #00aeef;
+}
+
+.instagramIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.aboutUsButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #000;
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.aboutUsButton:hover {
+  transition: 0.3s;
+  background-color: #00aeef;
+}
+
+.sloganDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan1 {
+  margin-top: 70px;
+  margin-left: -160px;
+  display: flex;
+  flex-direction: row;
+}
+
+.slogan2 {
+  margin-top: -70px;
+  margin-left: 160px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sloganTxt {
+  margin-left: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 65px;
+}
+
+#blueSlogan {
+  font-weight: 700;
+  color: #01acf1;
+}
+
+.seeDonations {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 35px;
+  background-image: url("/src/assets/solidariedade.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.box1 {
+  grid-column: 1/2;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/3;
+}
+
+.smallLogo {
+  margin-top: 59%;
+  height: 200px;
+  width: 200px;
+}
+
+.donationHomeButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 300px;
+  background-color: rgba(76, 194, 242, 0.7);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.donationHomeButton:hover {
+  background-color: #01acf1;
+  transition: 0.3s;
+}
+
+.currentHomeDiv {
+  display: grid;
+  height: max-content;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #e1e1e1;
+  padding: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10px;
+}
+
+.currentHomeBox2 {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.currentHomeBox2 {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.currentHomeBox3 {
+  margin-top: 30px;
+  height: max-content;
+}
+.currentHomeBox4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+}
+
+#homeMonthTitle {
+  margin: 0;
+}
+
+#homeNameTitle {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  font-size: 25px;
+}
+
+#homeNameText {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+#homeDataStyle {
+  font-size: 18px;
+}
+
+#homeProductsTitle {
+  margin: 0;
+  font-size: 20px;
+}
+
+#homeProductData {
+  font-size: 17px;
+}
+#homeCollectPointsTitle {
+  margin: 0;
+  font-size: 20px;
+}
+
+.homeAboutDonationButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #00aeef;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.homeAboutDonationButton:hover {
+  transition: 0.3s;
+  background-color: #0090c9;
+}
+
+#homeCollectPointText {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.collectionDesc {
+  grid-column: 1/3;
+  border-left: solid;
+  border-width: 6px;
+  border-color: #01acf1;
+  padding: 6px;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.collectionTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
