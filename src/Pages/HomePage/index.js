@@ -137,10 +137,10 @@ function HomePage() {
       <div className="currentHomeDiv">
         <div className="currentHomeBox1">
           <div className="homeBox1Chield">
-            <h2 className="monthTitle" id="homeMonthTitle">
+            <h2 className="monthTitleHome" id="homeMonthTitle">
               {getMonth(currentCollectionHome[0].startDate)}
             </h2>
-            <div>
+            <div className="instituteNameHome">
               <p className="dataStyle" id="homeNameTitle">
                 Instituição:{" "}
                 {

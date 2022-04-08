@@ -199,7 +199,6 @@
   height: 100px;
 }
 .currentHomeBox3 {
-  margin-top: 30px;
   height: max-content;
 }
 .currentHomeBox4 {
@@ -213,17 +212,24 @@
   margin: 0;
 }
 
+.monthTitleHome {
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
 #homeNameTitle {
   display: flex;
   flex-direction: row;
   margin: 0;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #homeNameText {
   margin: 0;
   margin-left: 10px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #homeDataStyle {
@@ -290,4 +296,202 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .sloganTxt {
+    margin-left: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+  }
+  .currentHomeDiv {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .currentHomeDiv {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .currentHomeDiv {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .currentHomeDiv {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 897px) {
+  .currentHomeDiv {
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+  }
+  .sloganTxt {
+    font-size: 35px;
+    margin-left: 5px;
+  }
+  .slogan2 {
+    margin-top: -50px;
+  }
+  .monthTitleHome {
+    font-size: 30px;
+  }
+  #homeNameTitle {
+    font-size: 15px;
+  }
+  #homeNameText {
+    font-size: 15px;
+  }
+  #homeProductsTitle {
+    font-size: 15px;
+  }
+  #homeProductData {
+    font-size: 13px;
+  }
+  #homeCollectPointsTitle {
+    font-size: 14px;
+  }
+  #homeCollectPointText {
+    font-size: 15px;
+  }
+  .collectionDesc {
+    font-size: 15px;
+  }
+  #homeDataStyle {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .currentHomeDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #homeNameTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  #homeNameText {
+    font-size: 20px;
+  }
+  .homeBox1Chield {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #homeDataStyle {
+    font-size: 18px;
+  }
+  .currentHomeBox3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  #homeProductsTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #homeProductData {
+    list-style: none;
+    font-size: 15px;
+  }
+  #homeCollectPointsTitle {
+    font-size: 18px;
+  }
+  .donationHomeButton {
+    font-size: 20px;
+    width: 170px;
+    height: 60px;
+  }
+  .seeDonations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .smallLogo {
+    margin-top: 0;
+    height: 150px;
+    width: 150px;
+  }
+  .slogan2 {
+    margin-top: -25px;
+  }
+  .sloganTxt {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .slogan1 {
+    margin-left: 0;
+  }
+  .slogan2 {
+    margin-left: 0;
+  }
+  #homeDataStyle {
+    font-size: 15px;
+  }
+  .emailIcon {
+    height: 40px;
+    width: 40px;
+  }
+  .instagramIcon {
+    height: 30px;
+    width: 30px;
+  }
+  .whatsappIcon {
+    height: 30px;
+    width: 30px;
+  }
+  #homeNameTitle {
+    font-size: 15px;
+  }
+  #homeNameText {
+    font-size: 15px;
+  }
+  #homeProductsTitle {
+    font-size: 15px;
+  }
+  #homeProductData {
+    font-size: 13px;
+  }
+  #homeCollectPointsTitle {
+    font-size: 14px;
+  }
+  #homeCollectPointText {
+    font-size: 15px;
+  }
+  .collectionDesc {
+    font-size: 13px;
+  }
+  #homeDataStyle {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  #homeDataStyle {
+    font-size: 13px;
+  }
 }
