@@ -71,3 +71,16 @@ input {
 .signinBTN:hover {
   color: #575757;
 }
+
+@media only screen and (max-width: 450px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .loginInput {
+    width: 300px;
+  }
+  #loginBTNId {
+    width: 300px;
+  }
+}

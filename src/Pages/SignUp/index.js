@@ -32,6 +32,7 @@ function Login() {
       <div className="form">
         <p className={emailClass}>E-MAIL</p>
         <input
+          className="loginInput"
           type="email"
           value={userEmail}
           onChange={(e) => {
@@ -40,6 +41,7 @@ function Login() {
         ></input>
         <p className="formP">SENHA</p>
         <input
+          className="loginInput"
           type="password"
           value={userPassword}
           onChange={(e) => {
@@ -48,6 +50,7 @@ function Login() {
         ></input>
         <p className={keyClass}>CHAVE DE ACESSO</p>
         <input
+          className="loginInput"
           type="text"
           value={userKey}
           onChange={(e) => {
@@ -56,6 +59,7 @@ function Login() {
         ></input>
         <button
           className="loginBTN"
+          id="signUpId"
           onClick={() => {
             setEmailClass("formP");
             setKeyClass("formP");

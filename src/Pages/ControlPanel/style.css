@@ -149,6 +149,7 @@
   margin-top: 55px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .searchInput {
@@ -197,20 +198,25 @@
   transition: 0.3s;
 }
 
-.admPopup {
-  margin-top: -100px;
-  margin-left: -500px;
-  top: 50%;
-  left: 50%;
-  position: fixed;
-  width: 1000px;
-  min-height: fit-content;
-  background-color: #5f5d5d;
-  border-radius: 10px;
+.admPopDiv {
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  padding-bottom: 35px;
+  flex-direction: row;
+  background-color: #5f5d5d;
+  width: 1000px;
+  padding: 20px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  position: fixed;
+  margin-top: -150px;
+  top: 50%;
+}
+
+.admPopup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: #f73c3c;
 }
 
 .admTitle {
@@ -263,11 +269,10 @@
 .searchResult {
   background-color: #e1e1e1;
   width: 1000px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 50px;
   border-radius: 10px;
   padding: 10px;
-  margin-left: 16%;
 }
 
 .currentButtonSearch {
@@ -401,4 +406,223 @@
 
 .searchResultOff {
   display: none;
+}
+
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1260px) {
+  .menuButton {
+    width: 400px;
+    font-size: 20px;
+  }
+  .currentCollection {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .menuButton {
+    width: 350px;
+  }
+  .searchResult {
+    width: auto;
+  }
+  .resButton {
+    width: 350px;
+  }
+  .resButtonR {
+    width: 350px;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    flex-direction: row;
+  }
+  .menuButton {
+    width: 200px;
+    margin: 10px;
+    font-size: 15px;
+  }
+  .pageTitle {
+    font-size: 30px;
+  }
+  .descResP {
+    font-size: 17px;
+  }
+  .descRes {
+    padding-right: 40px;
+  }
+  .resButton {
+    width: 300px;
+    font-size: 20px;
+  }
+  .resButtonR {
+    width: 300px;
+    font-size: 20px;
+  }
+  .admPopDiv {
+    width: 750px;
+  }
+  .admText {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+  .menuButton {
+    width: 350px;
+  }
+  .searchResult {
+    width: auto;
+  }
+  .resButton {
+    width: 350px;
+  }
+  .resButtonR {
+    width: 350px;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    flex-direction: row;
+  }
+  .menuButton {
+    width: 200px;
+    height: 55px;
+    margin: 10px;
+    font-size: 15px;
+  }
+  .pageTitle {
+    font-size: 30px;
+  }
+  .descResP {
+    font-size: 17px;
+  }
+  .descRes {
+    padding-right: 40px;
+  }
+  .resButton {
+    width: 300px;
+    font-size: 20px;
+  }
+  .resButtonR {
+    width: 300px;
+    font-size: 20px;
+  }
+  .admPopDiv {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .pageTitle {
+    font-size: 20px;
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  .logoutIcon {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .currentCollection {
+    width: 300px;
+  }
+  .currentTitle {
+    font-size: 20px;
+  }
+  .editCurrent {
+    width: 40px;
+    height: 40px;
+  }
+  .infoDiv {
+    flex-direction: column;
+  }
+  .nameTitle {
+    margin: 0;
+    margin-left: 20px;
+  }
+  .nameData {
+    margin: 10px;
+    margin-top: 5px;
+  }
+  .searchInput {
+    width: 300px;
+    margin-left: 0;
+  }
+  .monthTitle {
+    font-size: 30px;
+  }
+  .instRes {
+    margin-top: 30px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  .instNameRes {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .descResP {
+    font-size: 14px;
+  }
+  .searchResult {
+    width: 350px;
+  }
+  .resButton {
+    font-size: 13px;
+    width: 150px;
+  }
+  .resButtonR {
+    font-size: 13px;
+    width: 150px;
+  }
+  .idResult {
+    font-size: 14px;
+  }
+  .admPopDiv {
+    width: 350px;
+  }
+  .admTitle {
+    font-size: 25px;
+  }
+  .admText {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .menuButton {
+    font-size: 13px;
+    width: 150px;
+  }
+  .admPopDiv {
+    width: 300px;
+  }
+  .admTitle {
+    font-size: 20px;
+  }
+  .admText {
+    font-size: 9px;
+  }
 }

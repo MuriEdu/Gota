@@ -115,21 +115,23 @@ function ControlPanel() {
     <div>
       {/* adm popup */}
       <div className={admClass}>
-        <div>
-          <p className="admTitle">Novo Administrador</p>
-          <p className="admText">Chave de acesso: {key}</p>
-          <Link className="admText" id="admLink" to={"/signup"}>
-            Link: https://projetogota.netlify.app/singin
-          </Link>
+        <div className="admPopDiv">
+          <div>
+            <p className="admTitle">Novo Administrador</p>
+            <p className="admText">Chave de acesso: {key}</p>
+            <Link className="admText" id="admLink" to={"/signup"}>
+              Link: https://projetogota.netlify.app/singin
+            </Link>
+          </div>
+          <button
+            className="admExit"
+            onClick={() => {
+              setAdmClass("admPopupNone");
+            }}
+          >
+            X
+          </button>
         </div>
-        <button
-          className="admExit"
-          onClick={() => {
-            setAdmClass("admPopupNone");
-          }}
-        >
-          X
-        </button>
       </div>
 
       <div className="container">
