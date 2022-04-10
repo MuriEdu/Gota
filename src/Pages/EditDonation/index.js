@@ -86,7 +86,7 @@ function EditDonation() {
             }}
           ></input>
         </div>
-        <div>
+        <div className="popButtonsDiv">
           <button
             className="popButtons"
             id="confirmPopButton"
@@ -153,7 +153,7 @@ function EditDonation() {
             + Produtos
           </button>
         </div>
-        <div>
+        <div className="popButtonsDiv">
           <button
             className="popButtons"
             id="confirmPopButton"
@@ -219,7 +219,7 @@ function EditDonation() {
             + Pontos de Coleta
           </button>
         </div>
-        <div>
+        <div className="popButtonsDiv">
           <button
             className="popButtons"
             id="confirmPopButton"
@@ -259,7 +259,7 @@ function EditDonation() {
             name = e.target.value;
           }}
         ></input>
-        <div>
+        <div className="popButtonsDiv">
           <button
             className="popButtons"
             id="confirmPopButton"
@@ -299,7 +299,7 @@ function EditDonation() {
             desc = e.target.value;
           }}
         ></textarea>
-        <div>
+        <div className="popButtonsDiv">
           <button
             className="popButtons"
             id="confirmPopButton"
@@ -341,7 +341,7 @@ function EditDonation() {
             setNewProduct(e.target.value);
           }}
         ></input>
-        <div>
+        <div className="popButtonsAddDiv">
           <button
             className="popButtons"
             id="confirmPopButton"
@@ -382,7 +382,7 @@ function EditDonation() {
             setNewCollectPoint(e.target.value);
           }}
         ></input>
-        <div>
+        <div className="popButtonsAddDiv">
           <button
             className="popButtons"
             id="confirmPopButton"
@@ -420,7 +420,7 @@ function EditDonation() {
       {/* PopUp */}
       <div className={editClass}>
         <p className="popTitleText">Editar {popTitle}</p>
-        <div>{popType}</div>
+        <div className="popDiv">{popType}</div>
       </div>
 
       {/* Header */}
@@ -439,160 +439,166 @@ function EditDonation() {
           <HiOutlineLogout className="logoutIcon" />
         </button>
       </div>
-      <h3 className="editTitle">Editar</h3>
 
-      {/* Date div */}
-      <div className="itemDiv">
-        <button
-          className="editButton"
-          onClick={() => {
-            editButtonFunction(0);
-            const getType = datePopup();
-            setPopType(getType);
-          }}
-        >
-          <BiEdit className="editButtonIcon" />
-        </button>
-        <p className="itemTitle">Data:</p>
-        <p className="itemText">
-          Dos dias {startDatePop} até {endDatePop}
-        </p>
-      </div>
-
-      {/* Product div */}
-      <div className="itemDiv" id="products">
-        <button
-          className="editButton"
-          onClick={() => {
-            editButtonFunction(1);
-            const getType = productsPopup();
-            setPopType(getType);
-          }}
-        >
-          <BiEdit className="editButtonIcon" />
-        </button>
-        <div className="productDiv">
-          <p className="itemTitle" id="productsTitle">
-            Produtos:
-          </p>
-          {productsPop.map((value) => {
-            return (
-              <div className="productLiDiv">
-                <li className="itemText">{value}</li>
-              </div>
-            );
-          })}
+      <main className="mainContent">
+        <h3 className="editTitle">Editar</h3>
+        {/* Date div */}
+        <div className="itemDiv">
+          <button
+            className="editButton"
+            onClick={() => {
+              editButtonFunction(0);
+              const getType = datePopup();
+              setPopType(getType);
+            }}
+          >
+            <BiEdit className="editButtonIcon" />
+          </button>
+          <div className="nameDiv">
+            <p className="itemTitle">Data:</p>
+            <p className="itemText">
+              Dos dias {startDatePop} até {endDatePop}
+            </p>
+          </div>
         </div>
-      </div>
 
-      {/* Collect Point div */}
-      <div className="itemDiv" id="products">
-        <button
-          className="editButton"
-          onClick={() => {
-            editButtonFunction(1);
-            const getType = collectPointPopup();
-            setPopType(getType);
-          }}
-        >
-          <BiEdit className="editButtonIcon" />
-        </button>
-        <div className="productDiv">
-          <p className="itemTitle" id="productsTitle">
-            Pontos de Coleta:
-          </p>
-          {collectPointPop.map((value) => {
-            return (
-              <div className="productLiDiv">
-                <li className="itemText">{value}</li>
-              </div>
-            );
-          })}
+        {/* Product div */}
+        <div className="itemDiv" id="products">
+          <button
+            className="editButton"
+            onClick={() => {
+              editButtonFunction(1);
+              const getType = productsPopup();
+              setPopType(getType);
+            }}
+          >
+            <BiEdit className="editButtonIcon" />
+          </button>
+          <div className="productDiv">
+            <p className="itemTitle" id="productsTitle">
+              Produtos:
+            </p>
+            {productsPop.map((value) => {
+              return (
+                <div className="productLiDiv">
+                  <li className="itemText">{value}</li>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      {/* Name div */}
-      <div className="itemDiv">
-        <button
-          className="editButton"
-          onClick={() => {
-            editButtonFunction(2);
-            const getType = namePopup();
-            setPopType(getType);
-          }}
-        >
-          <BiEdit className="editButtonIcon" />
-        </button>
-        <p className="itemTitle">Nome da instituição:</p>
-        <p className="itemText">{namePop}</p>
-      </div>
-
-      {/* Desc div */}
-      <div className="itemDiv" id="descItemDiv">
-        <button
-          className="editButton"
-          onClick={() => {
-            editButtonFunction(3);
-            const getType = descPopup();
-            setPopType(getType);
-          }}
-        >
-          <BiEdit className="editButtonIcon" />
-        </button>
-        <div className="descDiv">
-          <p className="itemTitle" id="descTitle">
-            Resumo da instituição:
-          </p>
-          <p className="itemText" id="descText">
-            {descPop}
-          </p>
+        {/* Collect Point div */}
+        <div className="itemDiv" id="products">
+          <button
+            className="editButton"
+            onClick={() => {
+              editButtonFunction(1);
+              const getType = collectPointPopup();
+              setPopType(getType);
+            }}
+          >
+            <BiEdit className="editButtonIcon" />
+          </button>
+          <div className="productDiv">
+            <p className="itemTitle" id="productsTitle">
+              Pontos de Coleta:
+            </p>
+            {collectPointPop.map((value) => {
+              return (
+                <div className="productLiDiv">
+                  <li className="itemText">{value}</li>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      {/* buttons */}
-      <div className="buttons">
-        <button
-          className="addButton"
-          onClick={() => {
-            // set changes
+        {/* Name div */}
+        <div className="itemDiv">
+          <button
+            className="editButton"
+            onClick={() => {
+              editButtonFunction(2);
+              const getType = namePopup();
+              setPopType(getType);
+            }}
+          >
+            <BiEdit className="editButtonIcon" />
+          </button>
+          <div className="nameDiv">
+            <p className="itemTitle">Nome da instituição:</p>
+            <p className="itemText">{namePop}</p>
+          </div>
+        </div>
 
-            function stringCorrection(text) {
-              text = text.toLowerCase();
-              text = text.replace(new RegExp("[ÁÀÂÃ]", "gi"), "a");
-              text = text.replace(new RegExp("[ÉÈÊ]", "gi"), "e");
-              text = text.replace(new RegExp("[ÍÌÎ]", "gi"), "i");
-              text = text.replace(new RegExp("[ÓÒÔÕ]", "gi"), "o");
-              text = text.replace(new RegExp("[ÚÙÛ]", "gi"), "u");
-              text = text.replace(new RegExp("[Ç]", "gi"), "c");
-              text = text.replace(/\s/g, "");
-              return text;
-            }
-            const newDonNameSch = stringCorrection(namePop);
+        {/* Desc div */}
+        <div className="itemDiv" id="descItemDiv">
+          <button
+            className="editButton"
+            onClick={() => {
+              editButtonFunction(3);
+              const getType = descPopup();
+              setPopType(getType);
+            }}
+          >
+            <BiEdit className="editButtonIcon" />
+          </button>
+          <div className="descDiv">
+            <p className="itemTitle" id="descTitle">
+              Resumo da instituição:
+            </p>
+            <p className="itemText" id="descText">
+              {descPop}
+            </p>
+          </div>
+        </div>
 
-            newDon.startDate = startDatePop;
-            newDon.endDate = endDatePop;
-            newDon.products = productsPop;
-            newDon.name = namePop;
-            newDon.description = descPop;
-            newDon.nameSch = newDonNameSch;
-            newDon.collectPoint = collectPointPop;
+        {/* buttons */}
+        <div className="buttons">
+          <button
+            className="addButton"
+            onClick={() => {
+              // set changes
 
-            editData(donation.id, newDon)
-              .then((e) => {
-                alert("Alteração feita com sucesso");
-                navigate("/painel");
-              })
-              .catch((err) => {
-                console.log(err);
-              });
-          }}
-        >
-          Confirmar
-        </button>
-        <Link className="cancelButton" to="/painel">
-          Cancelar
-        </Link>
-      </div>
+              function stringCorrection(text) {
+                text = text.toLowerCase();
+                text = text.replace(new RegExp("[ÁÀÂÃ]", "gi"), "a");
+                text = text.replace(new RegExp("[ÉÈÊ]", "gi"), "e");
+                text = text.replace(new RegExp("[ÍÌÎ]", "gi"), "i");
+                text = text.replace(new RegExp("[ÓÒÔÕ]", "gi"), "o");
+                text = text.replace(new RegExp("[ÚÙÛ]", "gi"), "u");
+                text = text.replace(new RegExp("[Ç]", "gi"), "c");
+                text = text.replace(/\s/g, "");
+                return text;
+              }
+              const newDonNameSch = stringCorrection(namePop);
+
+              newDon.startDate = startDatePop;
+              newDon.endDate = endDatePop;
+              newDon.products = productsPop;
+              newDon.name = namePop;
+              newDon.description = descPop;
+              newDon.nameSch = newDonNameSch;
+              newDon.collectPoint = collectPointPop;
+
+              editData(donation.id, newDon)
+                .then((e) => {
+                  alert("Alteração feita com sucesso");
+                  navigate("/painel");
+                })
+                .catch((err) => {
+                  console.log(err);
+                });
+            }}
+          >
+            Confirmar
+          </button>
+          <Link className="cancelButton" to="/painel">
+            Cancelar
+          </Link>
+        </div>
+      </main>
     </div>
   );
 }

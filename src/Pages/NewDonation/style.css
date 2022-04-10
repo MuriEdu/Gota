@@ -225,3 +225,131 @@
 .insideProductsDiv {
   display: flex;
 }
+
+@media only screen and (max-width: 940px) {
+  .addButton {
+    width: 350px;
+    font-size: 20px;
+  }
+  .cancelButton {
+    width: 350px;
+    font-size: 20px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .infoInput {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .titles {
+    font-size: 25px;
+  }
+  .dateText {
+    font-size: 20px;
+  }
+  .dateForm {
+    display: flex;
+    align-items: center;
+  }
+  .dateInput {
+    width: 100px;
+    font-size: 15px;
+  }
+  .infoInput {
+    width: 500px;
+    margin: 0;
+  }
+  .addButton {
+    font-size: 16px;
+    width: 250px;
+  }
+  .cancelButton {
+    font-size: 16px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .dateForm {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0;
+  }
+  .nameForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .productsForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+  }
+  .infoForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+  }
+  .infoInput {
+    width: 300px;
+    font-size: 18px;
+  }
+  .titles {
+    font-size: 18px;
+  }
+  .dateText {
+    font-size: 15px;
+  }
+  .dateInput {
+    font-size: 15px;
+    width: 200px;
+    height: 20px;
+  }
+  .nameInput {
+    width: 300px;
+    font-size: 18px;
+  }
+  .productsPopup {
+    justify-content: center;
+  }
+  .popInput {
+    width: 250px;
+  }
+  .newProductButtonAdd {
+    width: 250px;
+  }
+  .newProductButtonCancel {
+    width: 250px;
+  }
+  .addButton {
+    width: 180px;
+  }
+  .cancelButton {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .subtitle {
+    font-size: 20px;
+    margin-left: 80px;
+  }
+  .addButton {
+    font-size: 13px;
+    width: 160px;
+  }
+  .cancelButton {
+    font-size: 13px;
+    width: 160px;
+  }
+}

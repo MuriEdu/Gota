@@ -66,6 +66,7 @@ function NewDonation() {
       <div className={newProductClass}>
         <p className="titles">Adicionar Produto</p>
         <input
+          className="popInput"
           value={newProduct}
           onChange={(e) => {
             setNewProduct(e.target.value);
@@ -96,11 +97,11 @@ function NewDonation() {
           Cancelar
         </button>
       </div>
-
       {/* Add CollectPoint PopUp */}
       <div className={newCollectPointClass}>
-        <p className="titles">Adicionar Produto</p>
+        <p className="titles">Adicionar Ponto de Coleta</p>
         <input
+          className="popInput"
           value={newCollectPoint}
           onChange={(e) => {
             setNewCollectPoint(e.target.value);
@@ -125,13 +126,12 @@ function NewDonation() {
         <button
           className="newProductButtonCancel"
           onClick={() => {
-            setNewProductClass("productsPopupNone");
+            setNewCollectPointClass("productsPopupNone");
           }}
         >
           Cancelar
         </button>
       </div>
-
       <div className="container">
         {/* header */}
         <div className="header">

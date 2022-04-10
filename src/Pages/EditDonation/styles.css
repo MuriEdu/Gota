@@ -4,15 +4,19 @@
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 35px;
-  margin-left: 80px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .itemDiv {
   display: flex;
   align-items: center;
-  margin-left: 80px;
   margin-bottom: 30px;
-  width: 520px;
+  width: 700px;
 }
 
 .editButton {
@@ -50,6 +54,10 @@
   font-size: 18px;
 }
 
+.nameDiv {
+  display: flex;
+}
+
 .productDiv {
   display: flex;
   flex-direction: column;
@@ -63,10 +71,6 @@
 #productsTitle {
   margin: 8px;
   margin-left: 20px;
-}
-
-.productLiDiv {
-  margin-left: 45px;
 }
 
 #descItemDiv {
@@ -84,9 +88,11 @@
 }
 
 .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 80px;
   margin-bottom: 100px;
-  margin-left: 30%;
 }
 
 .none {
@@ -122,8 +128,6 @@
   color: #fff;
   width: 200px;
   height: 40px;
-  margin: 23px;
-  margin-bottom: 40px;
   border: none;
   border-radius: 10px;
 }
@@ -171,7 +175,6 @@
 .productDivPop {
   display: flex;
   flex-direction: row;
-  margin-left: 200px;
 }
 
 .productsListPop {
@@ -243,4 +246,91 @@
 .namePopDiv {
   display: flex;
   flex-direction: column;
+}
+
+.popButtonsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.popButtonsAddDiv {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 660px) {
+  .editBox {
+    width: 600px;
+    margin-left: -300px;
+  }
+  .itemDiv {
+    width: 600px;
+  }
+  #descItemDiv {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .itemDiv {
+    width: 400px;
+  }
+  #descItemDiv {
+    width: 400px;
+  }
+  .itemTitle {
+    font-size: 20px;
+    margin: 0;
+  }
+  .itemText {
+    margin: 0;
+    font-size: 15px;
+  }
+  .nameDiv {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .popTitleText {
+    font-size: 20px;
+  }
+  .popButtons {
+    width: 150px;
+  }
+  .newProductPopInput {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .itemDiv {
+    width: 300px;
+  }
+  #descItemDiv {
+    width: 300px;
+  }
+  #descText {
+    margin: 0;
+  }
+  .itemText {
+    font-size: 13px;
+  }
+  .itemTitle {
+    font-size: 18px;
+  }
+  .editBox {
+    width: 350px;
+    margin-left: -175px;
+  }
+  .productsListPop {
+    font-size: 15px;
+  }
+  .datePopText {
+    font-size: 13px;
+  }
 }
