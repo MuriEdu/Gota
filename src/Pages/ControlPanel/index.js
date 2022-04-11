@@ -10,7 +10,13 @@ function ControlPanel() {
   const key = "SsRw8Om4XzVsaxUZPY_AmBWAqc8NzE68KvvfCsoNG4c";
 
   useEffect(() => {
-    const user = JSON.parse(window.sessionStorage.getItem("@TOKEN-key"));
+    const keepOption = window.localStorage.getItem("@KEEP");
+    let user = JSON.parse(window.sessionStorage.getItem("@TOKEN-key"));
+
+    if (keepOption === "true") {
+      const getUser = JSON.parse(window.localStorage.getItem("@TOKEN-key"));
+      user = getUser;
+    }
 
     if (user === null) {
       navigate("/login");
@@ -151,8 +157,9 @@ function ControlPanel() {
           <button
             className="logout"
             onClick={() => {
-              sessionStorage.removeItem("@TOKEN-key");
-              window.location.reload(true);
+              window.sessionStorage.clear();
+              window.localStorage.clear();
+              navigate("/login");
             }}
           >
             <HiOutlineLogout className="logoutIcon" />

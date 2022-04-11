@@ -3,6 +3,7 @@ import Logo from "../../assets/Logo.transparente.png";
 import "./style.css";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
+import { AiOutlineBorder, AiOutlineCheckSquare } from "react-icons/ai";
 
 function Login() {
   const [user, setUser] = useState(null);
@@ -11,6 +12,9 @@ function Login() {
   const [img, setImg] = useState(null);
   const [emailClass, setEmailClass] = useState("formP");
   const [passClass, setPassClass] = useState("formP");
+  const [keepBoxClass, setKeepBoxClass] = useState("keepBoxClass");
+  const [keepBoxCheckClass, setKeepBoxCheckClass] = useState("none");
+  const [keepOption, setKeepOption] = useState(false);
 
   const auth = getAuth();
   const navigate = useNavigate();
@@ -53,10 +57,18 @@ function Login() {
             signInWithEmailAndPassword(auth, userEmail, userPassword)
               .then((userCredential) => {
                 setUser(userCredential.user);
-                window.sessionStorage.setItem(
-                  "@TOKEN-key",
-                  JSON.stringify(userCredential.user)
-                );
+                if (keepOption === true) {
+                  window.localStorage.setItem("@KEEP", "true");
+                  window.localStorage.setItem(
+                    "@TOKEN-key",
+                    JSON.stringify(userCredential.user)
+                  );
+                } else {
+                  window.sessionStorage.setItem(
+                    "@TOKEN-key",
+                    JSON.stringify(userCredential.user)
+                  );
+                }
                 navigate("/painel");
               })
               .catch((err) => {
@@ -81,6 +93,18 @@ function Login() {
         >
           LOGIN
         </button>
+        <div
+          className="keepConnectedDiv"
+          onClick={() => {
+            setKeepBoxClass(keepBoxCheckClass);
+            setKeepBoxCheckClass(keepBoxClass);
+            setKeepOption(!keepOption);
+          }}
+        >
+          <AiOutlineBorder className={keepBoxClass} />
+          <AiOutlineCheckSquare className={keepBoxCheckClass} />
+          <p className="keepConnectedText">Me manter conectado</p>
+        </div>
         <Link to={"/signup"} className="signinBTN">
           Fazer Cadastro
         </Link>

@@ -7,7 +7,13 @@ import { addData } from "../../firebase";
 
 function NewDonation() {
   useEffect(() => {
-    const user = JSON.parse(window.sessionStorage.getItem("@TOKEN-key"));
+    const keepOption = window.localStorage.getItem("@KEEP");
+    let user = JSON.parse(window.sessionStorage.getItem("@TOKEN-key"));
+
+    if (keepOption === "true") {
+      const getUser = JSON.parse(window.localStorage.getItem("@TOKEN-key"));
+      user = getUser;
+    }
 
     if (user === null) {
       navigate("/login");

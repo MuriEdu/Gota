@@ -12,6 +12,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 input {
@@ -70,6 +71,28 @@ input {
 
 .signinBTN:hover {
   color: #575757;
+}
+.keepConnectedDiv {
+  width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  gap: 5px;
+  cursor: pointer;
+}
+.keepConnectedDiv:hover {
+  color: #0378a3;
+  transition: 0.3s;
+}
+
+.keepConnectedDiv:active {
+  color: #67d7ff;
+}
+
+.keepConnectedText {
+  width: max-content;
 }
 
 @media only screen and (max-width: 450px) {
