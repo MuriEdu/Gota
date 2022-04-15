@@ -449,6 +449,9 @@
   .laSalle {
     width: 400px;
   }
+  .seeDonations {
+    background-image: url("../../assets/solidariedade2.png");
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -499,6 +502,9 @@
   }
   .laSalle {
     width: 300px;
+  }
+  .seeDonations {
+    background-image: url("../../assets/solidariedade3.png");
   }
 }
 
