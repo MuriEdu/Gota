@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import Logo from "../../assets/Logo.transparente.png";
+import LaSalle from "../../assets/lasallelogo.png";
 import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -181,11 +182,13 @@ function HomePage() {
               </li>
             );
           })}
-          {/* <button className="homeAboutDonationButton">Saiba Mais</button> */}
         </div>
         <div className="collectionDesc">
           <p>{currentCollectionHome[0].description}</p>
         </div>
+      </div>
+      <div className="collectionTitle">
+        <img src={LaSalle} alt={"LaSalle"} className="laSalle" />
       </div>
       <div className="collectionTitle">
         <Link to={"/painel"} className="aboutUsButton">

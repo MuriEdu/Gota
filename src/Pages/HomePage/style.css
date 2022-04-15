@@ -298,6 +298,12 @@
   margin-bottom: 50px;
 }
 
+.laSalle {
+  width: 500px;
+  margin: 40px;
+  margin-bottom: 100px;
+}
+
 @media only screen and (max-width: 1440px) {
   .sloganTxt {
     margin-left: 15px;
@@ -440,6 +446,9 @@
   .sloganTxt {
     font-size: 20px;
   }
+  .laSalle {
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -488,10 +497,16 @@
   #homeDataStyle {
     font-size: 15px;
   }
+  .laSalle {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 395px) {
   #homeDataStyle {
     font-size: 13px;
+  }
+  .laSalle {
+    width: 250px;
   }
 }
