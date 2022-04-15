@@ -158,7 +158,7 @@ export function findDonation(name) {
     const valueName = value.name;
     const valueStr = stringCorrection(valueName);
 
-    if (valueStr === nameStr) {
+    if (valueStr.includes(nameStr) === true) {
       return value;
     }
   }
