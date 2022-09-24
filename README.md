@@ -27,5 +27,5 @@
 ## Requirements and Libraries
 - [Node](https://nodejs.org/en/)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [React Router]https://v5.reactrouter.com/web/guides/quick-start)
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start)
 - [Firebase](https://firebase.google.com/)
