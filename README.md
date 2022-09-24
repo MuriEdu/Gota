@@ -19,10 +19,10 @@
   
 ## Features
 :white_check_mark: Displays the current fundraiser  
-:white_check_mark: Create a new fundraiser and save in database
-:white_check_mark: Delete a fundraiser
-:white_check_mark: Edit the fundraisers
-:white_check_mark: Protect adm pages with login
+:white_check_mark: Create a new fundraiser and save in database  
+:white_check_mark: Delete a fundraiser  
+:white_check_mark: Edit the fundraisers  
+:white_check_mark: Protect adm pages with login  
   
 ## Requirements and Libraries
 - [Node](https://nodejs.org/en/)
